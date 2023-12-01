@@ -54,7 +54,9 @@ class GetStartedPage extends StatelessWidget {
                     style: TextButton.styleFrom(
                       backgroundColor: kPrimaryColor,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/sign-up');
+                    },
                     child: Text(
                       'Get Started',
                       style: whiteTextStyle.copyWith(
