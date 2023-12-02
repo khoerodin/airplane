@@ -1,6 +1,7 @@
 # airplane
 
-A new Flutter project.
+Flutter Travel & Ticketing App
+![App Illustration](/assets/readme_image.jpeg "App Illustration")
 
 ## Getting Started
 
