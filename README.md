@@ -1,7 +1,18 @@
 # airplane
 
 Flutter Travel & Ticketing App
-![App Illustration](/assets/readme_image.jpeg "App Illustration")
+<p float="left">
+  <img src="/assets/readme_image1.png" width="20%">
+  <img src="/assets/readme_image2.png" width="20%">
+  <img src="/assets/readme_image3.png" width="20%">
+  <img src="/assets/readme_image4.png" width="20%">
+  <img src="/assets/readme_image5.png" width="20%">
+  <img src="/assets/readme_image6.png" width="20%">
+  <img src="/assets/readme_image7.png" width="20%">
+  <img src="/assets/readme_image8.png" width="20%">
+  <img src="/assets/readme_image9.png" width="20%">
+</p>
+
 
 ## Getting Started
 
