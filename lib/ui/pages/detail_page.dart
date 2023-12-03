@@ -46,7 +46,7 @@ class DetailPage extends StatelessWidget {
         return Container(
           width: 108,
           height: 24,
-          margin: const EdgeInsets.only(top: 15),
+          margin: const EdgeInsets.only(top: 20),
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/icon_emblem.png'),

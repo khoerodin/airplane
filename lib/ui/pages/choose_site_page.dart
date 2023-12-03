@@ -1,4 +1,5 @@
 import 'package:airplane/shared/theme.dart';
+import 'package:airplane/ui/pages/checkout_page.dart';
 import 'package:airplane/ui/widgtes/custom_button.dart';
 import 'package:airplane/ui/widgtes/seat_item.dart';
 import 'package:flutter/material.dart';
@@ -9,26 +10,24 @@ class ChooseSitePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget title() {
-      return SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Select Your',
-              style: blackTextStyle.copyWith(
-                fontSize: 24,
-                fontWeight: semiBold,
-              ),
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Select Your',
+            style: blackTextStyle.copyWith(
+              fontSize: 24,
+              fontWeight: semiBold,
             ),
-            Text(
-              'Favourite Seat',
-              style: blackTextStyle.copyWith(
-                fontSize: 24,
-                fontWeight: semiBold,
-              ),
+          ),
+          Text(
+            'Favourite Seat',
+            style: blackTextStyle.copyWith(
+              fontSize: 24,
+              fontWeight: semiBold,
             ),
-          ],
-        ),
+          ),
+        ],
       );
     }
 
@@ -269,7 +268,14 @@ class ChooseSitePage extends StatelessWidget {
     Widget checkoutButton() {
       return CustomButton(
         title: 'Continue to Checkout',
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const CheckoutPage(),
+            ),
+          );
+        },
         margin: const EdgeInsets.only(
           top: 30,
           bottom: 46,
@@ -279,18 +285,19 @@ class ChooseSitePage extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: kBackgroundColor,
-      body: ListView(
-        padding: EdgeInsets.symmetric(
-          horizontal: defaultMargin,
+      body: SafeArea(
+        child: ListView(
+          padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+          children: [
+            const SizedBox(height: 20),
+            title(),
+            seatStatus(),
+            selectSeat(),
+            yourSeat(),
+            total(),
+            checkoutButton(),
+          ],
         ),
-        children: [
-          title(),
-          seatStatus(),
-          selectSeat(),
-          yourSeat(),
-          total(),
-          checkoutButton(),
-        ],
       ),
     );
   }

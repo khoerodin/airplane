@@ -10,7 +10,7 @@ class SignUpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget title() {
       return Container(
-        margin: const EdgeInsets.only(top: 30),
+        margin: const EdgeInsets.only(top: 20),
         padding: const EdgeInsets.only(right: 100),
         child: Text(
           'Join us and get your next journey',
@@ -100,9 +100,7 @@ class SignUpPage extends StatelessWidget {
       backgroundColor: kBackgroundColor,
       body: SafeArea(
         child: ListView(
-          padding: EdgeInsets.symmetric(
-            horizontal: defaultMargin,
-          ),
+          padding: EdgeInsets.symmetric(horizontal: defaultMargin),
           children: [
             title(),
             inputSection(),

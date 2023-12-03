@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
         margin: EdgeInsets.only(
           left: defaultMargin,
           right: defaultMargin,
-          top: 30,
+          top: 20,
         ),
         child: Row(
           children: [
@@ -161,12 +161,14 @@ class HomePage extends StatelessWidget {
       );
     }
 
-    return ListView(
-      children: [
-        header(),
-        popularDestination(),
-        newDestinations(),
-      ],
+    return SafeArea(
+      child: ListView(
+        children: [
+          header(),
+          popularDestination(),
+          newDestinations(),
+        ],
+      ),
     );
   }
 }
