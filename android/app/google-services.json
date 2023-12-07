@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "437274025155",
+    "project_id": "airplane-243ff",
+    "storage_bucket": "airplane-243ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437274025155:android:3706ae38b71f57a72d9676",
+        "android_client_info": {
+          "package_name": "com.khoerodin.airplane"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe58sPnQdt6Kk_9l2kcOWEFerAf6EIpxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
